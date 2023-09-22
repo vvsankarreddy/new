@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+*{
+  margin: 0;
+  box-sizing:border-box;
+  padding: 0;
+  text-decoration: none;
+  list-style-type:none;
+  color: #fff;
+}
+.nav{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 20px;
+}
+.nav .logo{
+  font-size: 30px;
+  font-weight: 500;
+  position: relative;
+  left: 30px;
+}
+.nav .menu_list{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  font-size: 23px;
+  font-weight: 400;
+}
+.nav .login_btn{
+  position: relative;
+  padding: 4px 24px;
+  right: 30px;
+  background: transparent;
+  border-radius: 6px;
+  font-size: 25px;
+  border: 2px solid #ffff;
+}
+body{
+  background-image: url("/bg.jpg");
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.login_form{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #2b2b2b2b;
+  color: #fff;
+  padding: 10px 30px;
+  width: 100%;
+  max-width: 480px;
+  height: 370px;
+  backdrop-filter: blur(15px);
+  /*opacity: 0;
+  pointer-events: none;*/
+}
+/*.login_form.active{
+  opacity: 1;
+  pointer-events: auto;
+}*/
+.login_form .close{
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  font-size: 40px;
+}
+.login_form h2{
+  font-size: 70px;
+  font-weight: 600;
+  text-align: center;
+}
+.login_form .input_box{
+  display: flex;
+  width: 100%;
+  height: 45px;
+  margin-top: 20px;
+}
+.login_form .input_box .lable{
+  position: absolute;
+  user-select: none;
+  left: 60px;
+  font-size: 20px;
+  color:#fff;
+  opacity: 0.7;
+}
+.login_form input{
+  border: none;
+  outline: none;
+  left: 20px;
+  position: relative;
+  border-bottom: 2px solid black;
+  width: 100%;
+  background: transparent;
+  color: #fff;
+  font-size: 20px;
+}
+.input_box input:focus ~ label{
+  color: #fff;
+  transform: translateY(-15px);
+}
+.input_box .icon{
+  position: absolute;
+  font-size: 25px;
+  left: 10px;
+}
+.login_form .input_box .eye-open{
+  position: relative;
+  font-size: 40px;
+}
+.login_form .forgot-details{
+  position: relative;
+  font-size: 10px;
+}
+.forgot-details .checkbox{
+  position: relative;
+  top: 10px;
+  left: -190px;
+  font-size: 20px;
+}
+.forgot-details span{
+  position: relative;
+  font-size: 20px;
+  top: -10px;
+  left: 30px;
+}
+.forgot-details label{
+  position: relative;
+  right: -110px;
+  top: -10px;
+  font-size: 20px;
+  color: snow;
+}
+.btn button{
+  position: absolute;
+  width: 90%;
+  height: 40px;
+  border-radius: 8px;
+  right: 20px;
+  color: #fff;
+  font-size: 35px;
+  background: #f5177a;
+  border: 2px solid snow;
+}
+.signup-btn{
+  position: absolute;
+  bottom: 20px;
+  font-size: 22px;
+  right: 20px;
+}
+.signup-btn span{
+  color: #210f1c;
+  font-size: 26px;
+}
